@@ -18,10 +18,7 @@ void insertInArray(int a[]){
 
 void smallestNumber(int a[],int* smallestNo,int* positionOfSmallestNo){
     *smallestNo = a[0];
-
     for(int i=1;i<5;i++){
-        
-
         if(*smallestNo>a[i]){
             *smallestNo = a[i];
             *positionOfSmallestNo = i;
@@ -31,12 +28,8 @@ void smallestNumber(int a[],int* smallestNo,int* positionOfSmallestNo){
 
 
 void largestNumber(int a[],int* largestNo,int* positionOfLargestNo){
-
    *largestNo = a[0];
-
-    for(int i=1;i<5;i++){
-        
-
+    for(int i=1;i<5;i++){    
         if(*largestNo<a[i]){
             *largestNo = a[i];
             *positionOfLargestNo = i;
@@ -62,9 +55,6 @@ void secondSmallestNumber(int a[],int positionOfSmallestNo,int* secondSmallestNo
     }
 }
 
-
-
-
 int main(){
 
     void printArray();
@@ -74,11 +64,10 @@ int main(){
     void secondLargestNumber();
     void secondSmallestNumber();
 
-    int a[10]={},largestNo,smallestNo,positionOfLargestNo,positionOfSmallestNo;
+    int a[10]={}, largestNo, smallestNo, positionOfLargestNo, positionOfSmallestNo;
     int secondLargestNo,secondSmallestNo;
 
     insertInArray(a);
-
     printArray(a);
 
     smallestNumber(a, &smallestNo, &positionOfSmallestNo);
@@ -90,7 +79,5 @@ int main(){
     printf("\n%d is the second largest number in an Array.",secondLargestNo);
     printf("\n%d is the second smallest number in an Array.",secondSmallestNo);
 
-
     return 0;
-
 }
