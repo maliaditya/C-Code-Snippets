@@ -35,7 +35,18 @@ void insertNode(){
     }
 }
 
+void deletionOfFirstNode(){
+    struct node *temp;
+  if(start == NULL){
+      printf("EMPTY LIST");
 
+  }else{
+      temp = start;
+      start = start->link;
+      free(temp);
+  }
+
+}
 
 void main(){
 
