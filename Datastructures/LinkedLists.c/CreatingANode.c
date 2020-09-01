@@ -48,6 +48,20 @@ void deletionOfFirstNode(){
 
 }
 
+void displayList(){
+    struct node *temp;
+    if(start == NULL){
+        printf("EMPTY LIST");
+
+    }else{
+        temp = start;
+        while(temp!=NULL){
+            printf("%d",temp->data);
+            temp = temp->link;
+        }
+  }
+}
+
 void main(){
 
 insertNode();
