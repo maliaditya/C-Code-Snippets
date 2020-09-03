@@ -62,9 +62,41 @@ void displayList(){
   }
 }
 
+int menu(){
+
+    
+    int ch;
+
+    printf("\n1. Enter data in the list");
+    printf("\n2. Delete data in the list");
+    printf("\n3. Display list");
+    printf("\n4. Exit");
+    printf("\n-> Enter Your Choice: ");
+    scanf("%d",&ch);
+
+    return(ch);
+
+}
+
 void main(){
 
-insertNode();
+    while(1){
+        switch(menu()){
+
+            case1: insertNode();
+            break;
+
+            case2:deletionOfFirstNode();
+            break;
+
+            case3: displayList();
+            break;
+
+            case4:exit(0);
+
+            dafault: printf("Invalid Choice");
+        }
+    }
 
 
 }
